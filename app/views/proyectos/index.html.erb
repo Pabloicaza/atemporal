@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th colspan="2"></th>
+  </tr>
+
+  <% @proyectos.each do |proyecto| %>
+    <tr>
+      <td><%= proyecto.nombre_proyecto %></td>
+      <td><%= proyecto.tipo_proyecto %></td>
+      <td><%= link_to 'Show', proyecto_path(proyecto) %></td>
+      <td><%= link_to 'Edit', edit_proyecto_path(proyecto) %></td>
+      <td><%= link_to 'Destroy', proyecto_path(proyecto),
+              method: :delete%></td>
+    </tr>
+  <% end %>
+</table>

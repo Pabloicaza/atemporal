@@ -1,0 +1,21 @@
+<% if @photos %>
+	<div class="row">
+		<% @photos.each do |photo| %>
+			<div class="col-md-4">
+				<div class="panel panel-default">
+				  <div class="panel-heading preview">
+				  	<%= image_tag photo.image.url(), width: 200%>
+				  </div>
+				  <div class="panel-body">
+				  	<span class="pull-right">
+				  	<%= link_to proyecto_photo_path(photo.proyecto_id, photo), remote: true, method: :delete, data: {confirm: "Esta seguro que quiere borrar la foto?"} do %>
+				  		borrar
+				  	<% end %>
+				  	</span>
+				  </div>
+				</div>
+			</div>
+		<% end %>
+	</div>
+
+<% end %>

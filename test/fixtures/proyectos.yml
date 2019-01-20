@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_proyecto: MyString
+  tipo_proyecto: MyString
+  ubicacion: MyString
+  construccion: 1
+  terreno: 1
+  disponibilidad: false
+  resumen: MyText
+
+two:
+  nombre_proyecto: MyString
+  tipo_proyecto: MyString
+  ubicacion: MyString
+  construccion: 1
+  terreno: 1
+  disponibilidad: false
+  resumen: MyText
