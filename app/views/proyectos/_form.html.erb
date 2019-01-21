@@ -1,5 +1,5 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <%= form_for @proyecto, html: {multipart: true} do |f| %>
-
 <% if @proyecto.errors.any? %>
   <div id="error_explanation">
     <h2>
@@ -14,9 +14,8 @@
   </div>
 <% end %>
 
-
 <div class="row">
-  <div class="form-group">
+  <div class="form-group col-md-5">
     <label>Titulo del proyecto</label>
     <%= f.text_field :nombre_proyecto, placeholder: "Título principal", class: "form-control" %>
   </div>
@@ -32,44 +31,44 @@
 </div>
 
 <div class="row">
-  <div class="form-group">
+  <div class="form-group col-md-5">
     <label>Ubicación</label>
     <%= f.text_field :ubicacion, placeholder: "ej. Temozón, Mérida Yucatán México.", class: "form-control" %>
   </div>
 </div>
 
 <div class="row">
-  <div class="form-group">
+  <div class="form-group col-md-5">
     <label>m2 de constricción</label>
     <%= f.text_field :construccion, placeholder: "ej. 142", class: "form-control" %>
   </div>
 </div>
 
 <div class="row">
-  <div class="form-group">
+  <div class="form-group col-md-5">
     <label>m2 de terreno</label>
     <%= f.text_field :terreno, placeholder: "ej. 162", class: "form-control" %>
   </div>
 </div>
 
 <div class="row">
-  <div class="form-group">
+  <div class="form-group col-md-8">
     <label>Resumen</label>
     <%= f.text_area :resumen, rows: 5, placeholder: "Resumen de propiedad", class: "form-control" %>
   </div>
 </div>
-<hr>
+
 <div class="row">
-	<div class="col-md-12 form-group">
+	<div class="col-md-10 form-group">
 		<%= file_field_tag "images[]", type: :file, multiple: true%>
 	</div>
 </div>
-<hr>
+
 <div id="photos"><%= render 'photos/photos_list' %></div>
 <hr>
 
 <div class="actions">
-  <%= f.submit "Guardar", class: "btn btn-primary" %>
+  <%= f.submit "Guardar", class: "pure-button pure-button-primar" %>
 </div>
 
 <% end %>
