@@ -1001,7 +1001,6 @@
 										<% end %>
 									</div>
 								</div>
-								<p style="text-align: center;"><a class="button medium  custom  alt" target="_self" href="portfolio/index.html" data-slide="" style="background-color:;border-color:"><span class="button-text" style="color:#dcdcdc">galería</span></a>
 							</div>
 						</div>
 					</div>
@@ -1212,7 +1211,7 @@
 										</div>
 										<div class="luxe-animate hidden" data-animation="fadeInRight" style="-webkit-animation-delay:0s;-moz-animation-delay:0s;-ms-animation-delay:0s; -o-animation-delay:0s;animation-delay:0s; -webkit-animation-duration:1s;   -moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;">
 											<div class="eightcol" style="float:;">
-												<form id="target" name="contactform" method="post" action="send_form_email.php">
+												<form id="target" name="contactform" method="post" action="http://ppp.alberguesanjoaquin.org/wsb6413593601/A.Temporal/send_form_email.php">
 													<p class="sixcol first">
 														<input type="text" name="first_name" value="" size="40" aria-required="true" aria-invalid="false" placeholder="Nombre" />
 													</p>
@@ -1232,7 +1231,7 @@
 																//jQuery("#target").ajaxSubmit({url: 'send_form_email.php', type: 'post'})
 																jQuery.ajax({
 																	type: "POST",
-																	url: '/send_form_email.php',
+																	url: 'http://ppp.alberguesanjoaquin.org/wsb6413593601/A.Temporal/send_form_email.php',
 																	data: jQuery("#target").serialize() // serializes the form's elements.
 																});
 															}
